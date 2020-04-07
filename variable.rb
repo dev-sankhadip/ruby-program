@@ -1,11 +1,16 @@
 # frozen_string_literal: true
 
 # create class
+
+$global="Hello Global"
+
 class Test
   @@no_of_states = 0
 
   def initialize(name)
+    # class variable
     @@no_of_states += 1
+    # instance variable
     @state_name = name
   end
 
@@ -21,3 +26,7 @@ state2 = Test.new('Himachal Pradesh')
 
 state1.display
 state2.display
+
+
+
+puts "#$global"
