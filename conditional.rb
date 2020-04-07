@@ -1,3 +1,4 @@
+# if else 
 a=2
 
 if a==1
@@ -7,3 +8,8 @@ elsif a==2
 else
   puts "Don't match anything"
 end
+
+# ternary operator
+a=3
+b=(a>3 ? true : false)
+puts b
